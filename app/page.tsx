@@ -8,12 +8,12 @@ export default function LandingPage() {
     <div className="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-gray-100">
       {/* Header */}
       <header className="sticky top-0 z-40 w-full backdrop-blur-lg bg-gray-950/70 border-b border-gray-800">
-        <div className="container mx-auto max-w-[1800px] px-4 sm:px-7 lg:px-8 flex h-17 items-center justify-between">
+        <div className="container mx-auto max-w-[1800px] px-4 sm:px-7 lg:px-8 flex h-19 items-center justify-between">
           <div className="flex items-center gap-2">
             <Layers className="h-6 w-6 text-[#FFD700] drop-shadow-[0_0_3px_rgba(255,215,0,0.3)]" />
-            <span className="text-xl font-bold">DevStudio</span>
+            <span className="text-xl font-bold hover:text-[#FFD700]">SoloStack</span>
           </div>
-          <nav className="hidden md:flex gap-8">
+          <nav className="hidden md:flex gap-20">
             <Link href="#services" className="text-base font-medium hover:text-[#FFD700] hover:drop-shadow-[0_0_3px_rgba(255,215,0,0.3)] transition-all">
               Services
             </Link>
@@ -27,7 +27,7 @@ export default function LandingPage() {
               Contact
             </Link>
           </nav>
-          <Button variant="outline" className="border-gray-700 hover:bg-gray-800 text-black">
+          <Button variant="outline" className="border-gray-700 hover:bg-[#FFD700] text-black">
             Get in Touch
           </Button>
         </div>
@@ -36,7 +36,7 @@ export default function LandingPage() {
       {/* Hero Section */}
       <section className="container mx-auto max-w-[1800px] px-4 sm:px-6 lg:px-8 py-24 md:py-40">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div className="space-y-6">
+          <div className="space-y-7">
             <div className="inline-block px-6 py-2 rounded-full bg-gray-800/50 backdrop-blur-sm border border-gray-700 text-base font-medium">
               Modern Web Solutions
             </div>
@@ -68,7 +68,7 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="relative">
-            <div className="absolute -inset-0.5 bg-[#FFD700]/20 rounded-lg blur-xl"></div>
+            <div className="absolute -inset-0.5 bg-[#FFD700]/20 rounded-1g blur-xl"></div>
             <div className="relative backdrop-blur-sm bg-gray-900/70 border border-gray-800 rounded-lg p-8 shadow-2xl">
               <div className="flex items-center gap-2 mb-6">
                 <div className="flex gap-2">
@@ -91,7 +91,7 @@ export default function LandingPage() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-gray-950">
+      <section id="services" className="py-30 bg-gray-950">
         <div className="container mx-auto max-w-[1800px] px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">My Services</h2>
@@ -100,7 +100,7 @@ export default function LandingPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
             {/* Service Card 1 */}
             <div className="group relative backdrop-blur-sm bg-gray-900/40 border border-gray-800 rounded-lg p-6 hover:border-[#FFD700]/50 transition-all duration-300">
               <div className="absolute -inset-0.5 bg-gradient-to-r from-[#FFD700]/20 to-[#FDB931]/20 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity"></div>
@@ -178,15 +178,15 @@ export default function LandingPage() {
             {/* Project 2 */}
             <div className="group relative overflow-hidden rounded-lg">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/images/marketing.png"
                 alt="Project 2"
                 width={800}
                 height={600}
                 className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                <h3 className="text-xl font-bold mb-2">SaaS Dashboard</h3>
-                <p className="text-gray-300 mb-4">User-friendly interface for a software as a service platform</p>
+                <h3 className="text-xl font-bold mb-2">Marketing Website</h3>
+                <p className="text-gray-300 mb-4">A professional and sleek marketing website for a business</p>
                 <Button variant="outline" size="sm" className="w-fit border-gray-600 bg-gray-900/50 backdrop-blur-sm">
                   View Project
                 </Button>
@@ -212,8 +212,8 @@ export default function LandingPage() {
             </div>
           </div>
 
-          <div className="mt-12 text-center">
-            <Button variant="outline" className="border-gray-700 hover:bg-gray-800">
+          <div className="mt-12 text-center text-black">
+            <Button variant="outline" className="border-gray-700 hover:bg-[#FFD700]">
               View All Projects
               <ChevronRight className="ml-2 h-4 w-4" />
             </Button>
@@ -222,18 +222,17 @@ export default function LandingPage() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-gray-950">
-        <div className="container mx-auto max-w-[1800px] px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="relative">
-              <div className="absolute -inset-1 bg-primary/20 rounded-lg blur-xl"></div>
-              <div className="relative backdrop-blur-sm bg-gray-900/70 border border-gray-800 rounded-lg overflow-hidden">
+      <section id="about" className="py-30 bg-gray-950">
+        <div className="container mx-auto max-w-[1800px] px-8 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+            <div className="relative flex justify-center">
+              <div className="relative w-[400px] h-[400px] rounded-full overflow-hidden border-10 border-[#FFD700] shadow-[0_0_15px_rgba(255,215,0,0.3)]">
                 <Image
-                  src="/placeholder.svg?height=800&width=800"
+                  src="/images/selfie1.jpg"
                   alt="Developer"
-                  width={800}
-                  height={800}
-                  className="w-full h-auto"
+                  width={400}
+                  height={400}
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
